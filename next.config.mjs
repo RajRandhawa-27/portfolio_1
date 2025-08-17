@@ -11,6 +11,12 @@ const nextConfig = {
   typescript: {
     ignoreBuildErrors: true,
   },
+  // Disable server-side features for static export
+  experimental: {
+    appDir: true,
+  },
+  // Ensure proper static export
+  distDir: 'out',
 };
 
 export default nextConfig;
